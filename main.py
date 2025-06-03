@@ -65,7 +65,10 @@ def select_time(call):
 
 @bot.message_handler(commands=['نمونه_کار'])
 def show_samples(message):
-    bot.send_message(message.chat.id, f"📸 برای دیدن نمونه‌کارها وارد کانال زیر شوید:
-👉 https://t.me/{CHANNEL_USERNAME}")
+    bot.send_message(message.chat.id, f'''📸 برای دیدن نمونه‌کارها وارد کانال زیر شوید:
+
+@Samira_nail_Art_Gallery''')
+
+ https://t.me/{CHANNEL_USERNAME})
 
 bot.infinity_polling()
