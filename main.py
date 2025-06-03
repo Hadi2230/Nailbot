@@ -68,6 +68,10 @@ def show_samples(message):
   bot.send_message(message.chat.id, f"📸 برای دیدن نمونه‌کارها وارد کانال زیر شوید:\nhttps://t.me/{CHANNEL_USERNAME}")
 
 
- https://t.me/{CHANNEL_USERNAME})
+@bot.message_handler(commands=['samples'])
+def send_samples(message):
+    bot.send_message(message.chat.id, f"""📸 برای دیدن نمونه‌کارها وارد کانال زیر شوید:
+https://t.me/{CHANNEL_USERNAME}""")
+
 
 bot.infinity_polling()
